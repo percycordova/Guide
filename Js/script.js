@@ -25,71 +25,6 @@
 })(document);
 
 
-/***********************ScrollBtn ******************************/
-((d) => {
-    const w = window;
-    const $scrollBtn = d.querySelector(".scroll-top-btn");
-    w.addEventListener("scroll", (e) => {
-        //console.log(w.pageYOffset, d.documentElement.scrollTop);
-        let scrollTop = d.documentElement.scrollTop || w.pageYOffset;
-        if (scrollTop > 900) {
-            $scrollBtn.classList.remove("hidden");
-        } else {
-            $scrollBtn.classList.add("hidden");
-        }
-    });
-
-    d.addEventListener("click", (e) => {
-        if (e.target.matches(".scroll-top-btn")) {
-            w.scrollTo({
-                behavior: "smooth", //el comportamiento
-                top: 0 //a donde quieres que regrese la barra vertical
-                //lef:0
-            });
-        }
-
-    });
-})(document);
-/***********************Modal***************************/
-((d) => {
-
-    const $portfolios = d.querySelectorAll(".portfolio-grid a"),      //Recibo todos las etiquetas a que esten dentro de mi .grid-portfolio
-        $trabajos = d.querySelectorAll("article.modal .modal-close"), //Recibo todos los div con la clase .modal-close que esten dentro de article.modal  
-        $contentModal = d.querySelector(".modal-content"); //Recibo la div del contenedor del modall
-    const $modalesTRabajos = d.querySelectorAll("#modales-proyectos article");
-
-    $portfolios.forEach(el => {
-
-        el.addEventListener("click", () => {
-
-            $modalesTRabajos.forEach(tra => {
-
-                if (`#${tra.id}` === (el.attributes[0].value)) {
-                    d.querySelector(`#${tra.id}`).classList.add("open-modal");
-                    d.querySelector(`#${tra.id} .modal-content`).classList.remove("close-modal-close");
-                }
-            });
-        });
-    });
-
-    $modalesTRabajos.forEach(el => {
-        (el.querySelector("div a")).addEventListener('click', () => {
-            d.querySelector(`#${el.id} .modal-content`).classList.add("close-modal-close");
-            d.querySelector(`#${el.id}`).classList.remove("open-modal");
-        })
-    });
-
-    /* $trabajos.forEach((el, acc) => {
-         el.addEventListener("click", () => {
-             $contentModal.classList.add("close-modal-close");
-             d.querySelector(`#trabajo-${acc + 1}`).classList.remove("open-modal");
-         });
-     });*/
-})(document);
-
-/* ********** ContactForm ********** */
-
-
 
 
 /***********************************Animaciones**************** */
@@ -144,12 +79,6 @@
         element1.classList.add('animate__animated','animate__backInLeft');
         animateCSS('.dirigimos-animacion-2', 'backInLeft');
 
-    });
-
-
-
-
-    
-    
+    });   
 
 })(document);
