@@ -19,6 +19,14 @@ body {
   overflow-x: hidden;
   color: #222;
 }
+
+button {
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+button:hover {
+  opacity: 0.75;
+}
 /********************************************************/
 
 .full-lg-screen-100 {
@@ -127,7 +135,7 @@ body {
 }
 
 .menu-btn {
-  outline: thin solid #fff;
+  outline: thin solid none;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 6px;
   width: 40px;
@@ -183,7 +191,6 @@ body {
   width: 80%;
   margin: auto auto;
   padding-top: 5rem;
-  
 }
 .acerca h2 {
   font-family: Poppins;
@@ -318,6 +325,7 @@ body {
 
 .servicios {
   padding-top: 5rem;
+  padding-bottom: 3rem;
   background-color: #e5e5e5;
 }
 
@@ -456,4 +464,49 @@ body {
   font-weight: bold;
   font-size: 22px;
   line-height: 33px;
+}
+/***********************************************Whassapt**********************************/
+.float {
+  position: fixed;
+  width: 169px;
+  height: 34px;
+  background: #00e676;
+  border-radius: 44px;
+  bottom: 2vh;
+  left: 2vw;
+  color: #fff;
+  text-align: center;
+  font-size: 0.6rem;
+  box-shadow: 1px 1px 1px white;
+  z-index: 100;
+  transition: all 0.5 ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.float:hover {
+  text-decoration: none;
+}
+
+.my-float {
+  font-size: 1.4rem !important;
+  margin-right: 5px;
+}
+
+.chatear {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2vw;
+  right: 1vh;
+  background: #f00109;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+.chatear:hover{
+  opacity: 0.75;
 }
