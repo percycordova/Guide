@@ -508,5 +508,6 @@ button:hover {
   transition: all ease .5s;
 }
 .chatear:hover{
+
   opacity: 0.75;
 }
