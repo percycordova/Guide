@@ -1,0 +1,459 @@
+html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  color: #222;
+}
+/********************************************************/
+
+.full-lg-screen-100 {
+  min-height: 100vh;
+}
+/**********************clases**************************/
+.none {
+  display: none;
+}
+.title-h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+/***********************cabecera******************************/
+.cabecera {
+  height: 4.5rem;
+  background-color: #0205c7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  width: 50px;
+  height: 46px;
+}
+.cabecera-claseGratis {
+}
+
+.cabecera-claseGratis p {
+  font-weight: 600;
+  font-size: 8.5px;
+  color: #ffffff;
+}
+.cabecera-claseGratis button {
+  width: 100%;
+  padding: 0.3rem 1.5rem;
+  background-color: #f00109;
+  border-radius: 96px;
+  outline: none;
+  border: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -5px;
+}
+.menu {
+  width: 359px;
+  height: 321px;
+  background: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  position: fixed;
+  right: 0;
+  top: 4.5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  padding: 0.75rem 0.5rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 27px;
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: #000000;
+}
+.menu a:nth-child(1) {
+  padding-top: 1.33rem;
+}
+.menu a:nth-child(6) {
+  border: none;
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: #0205c7;
+  text-decoration: none;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.none {
+  display: none;
+}
+
+.menu-btn {
+  outline: thin solid #fff;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+}
+.menu-btn svg {
+  fill: #fff;
+}
+/*****************************banner**************************/
+.banner {
+  background: #e5e5e5;
+  padding-top: 3.5rem;
+}
+.banner-contenedor {
+  background-image: url("../Assets/Tropa-28\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 281px;
+  filter: drop-shadow(3px -3px 9px rgba(0, 0, 0, 0.25));
+  margin: 0 auto;
+}
+
+.banner-contenedor p {
+  margin-top: 0;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: #000000;
+}
+
+.banner button {
+  display: block;
+  background: #f00109;
+  border-radius: 92px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  margin: 0rem auto;
+  padding: 0.3rem 0.8rem;
+}
+
+/**********************************************acerca********************************/
+.acerca {
+  width: 80%;
+  margin: auto auto;
+  padding-top: 5rem;
+  
+}
+.acerca h2 {
+  font-family: Poppins;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 40px;
+}
+.acerca p {
+  word-spacing: 1px;
+  font-weight: 400;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  color: #000000;
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+}
+.acerca-carrusel {
+  margin: 2rem auto;
+}
+/******************************nosotros**************************/
+
+.nosotros {
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+.nosotros article {
+  width: 10rem;
+  margin: 1rem auto;
+}
+.nosotros article:nth-child(4) {
+  width: 12rem;
+}
+
+.nosotros-numero {
+  padding: 0;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 108px;
+  color: #0205c7;
+  margin-bottom: 0;
+}
+.nosotros-text {
+  margin-top: -10px;
+  margin-bottom: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+/************************dirigimos******************/
+
+.dirigimos {
+  padding-top: 5rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+.dirigimos-personas article {
+  position: relative;
+  display: block;
+  margin: 2rem auto;
+}
+
+.dirigimos-personas article div {
+  display: block;
+  margin: 1rem auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #8297e0;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  border: 1px solid #8297e0;
+  position: relative;
+  cursor: pointer;
+}
+
+.dirigimos-personas article div .article-info {
+  position: absolute;
+  font-size: 10px;
+  line-height: 15px;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  color: #fff;
+  background-color: #8297e0;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.7s;
+}
+#info {
+  font-size: 9px !important;
+}
+
+.dirigimos-personas article div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.dirigimos-personas article div:hover .article-info {
+  visibility: visible;
+  opacity: 1;
+}
+.dirigimos article p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+/****************************servicios*****************/
+
+.servicios {
+  padding-top: 5rem;
+  background-color: #e5e5e5;
+}
+
+.servicios-contenedor {
+  margin: 2rem auto;
+  width: 80%;
+}
+.servicios-info {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta {
+  width: 275px;
+  height: 390px;
+  background: #ffffff;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  margin-bottom: 2rem;
+}
+.tarjeta-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.title-beca {
+  font-size: 1.5rem;
+}
+.tarjeta button {
+  background: #f00109;
+  width: 139px;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.tarjeta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.2rem;
+}
+.tarjeta-grid div {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.tarjeta-grid-beca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 0.2rem;
+}
+.tarjeta-grid-beca img {
+  display: block;
+  margin: 1rem auto;
+  filter: grayscale(100%);
+}
+
+.tarjeta-grid img {
+  display: block;
+  width: 64px;
+  height: 80px;
+  margin: auto auto;
+  filter: grayscale(100%);
+}
+
+.tarjeta-precio-botones img {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.tarjeta-precio {
+  width: 275px;
+  height: 147px;
+  background: #0205c7;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+.tarjeta-precio p {
+  display: inline-block;
+}
+.tarjeta-precio p:nth-child(2) {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  mix-blend-mode: normal;
+  text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin-top: -3rem;
+}
+.tarjeta-precio p small {
+  font-size: 1.5rem;
+  line-height: 36px;
+  position: absolute;
+  top: 2.2rem;
+  left: 3.2rem;
+}
+.tarjeta-precio p:nth-child(3) {
+  margin-top: -3rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+}
+.tarjeta-precio p:nth-child(1) {
+  margin-top: 0.1rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+}
