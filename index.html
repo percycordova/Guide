@@ -12,6 +12,7 @@
     <title>Guide</title>
 </head>
 
+
 <body>
 
     <div class="contenedor">
@@ -23,11 +24,11 @@
                 <p>Antes de matricularte obtén una</p>
                 <button class="btn">CLASE GRATIS</button>
             </div>
-            <button class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+            <button class="menu-btn btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                     <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" /></svg>
 
-                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                     <path
                         d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
                 </svg>
@@ -37,8 +38,8 @@
                 <a href="#nosotros" id="link-nosotros">¿Pór que nosotros?</a>
                 <a href="#dirigimos" id="link-dirigimos">¿A quienes nos dirigimos?</a>
                 <a href="#servicios">Descubre lo que te enseñaremos</a>
-                <a href="#">Explora nuestra aula virtual</a>
-                <a href="#">Nuestros ingresantes</a>
+                <a href="#aula">Explora nuestra aula virtual</a>
+                <a href="#ingresantes">Nuestros ingresantes</a>
             </nav>
         </header>
         <div class="banner ">
@@ -53,49 +54,55 @@
             </div>
         </div>
 
+
         <div class="acerca full-lg-screen-100" id="acerca">
-            <h2 class="acerca-title">
-                Acerca de GUIDE
-            </h2>
-            <p>
-                Somos una academia de preparación exclusiva para jóvenes que están próximos a postular a una escuela de
-                Oficiales, Sub Oficiales, Beca 18 y el IESTFFAA. Contamos con la mejor plana de docentes e instructores
-                con amplia experiencia en el uso de herramientas digitales, además de tener un moderno método de
-                enseñanza que garantizarán resultados positivos.
-            </p>
-            <div class="acerca-carrusel">
-                <div id="slider" class="carousel slide" data-ride="carousel">
+            <div class="contenedor-acerca ">
+                <h2 class="acerca-title">
+                    Acerca de GUIDE
+                </h2>
+                <p>
+                    Somos una academia de preparación exclusiva para jóvenes que están próximos a postular a una escuela
+                    de
+                    Oficiales, Sub Oficiales, Beca 18 y el IESTFFAA. Contamos con la mejor plana de docentes e
+                    instructores
+                    con amplia experiencia en el uso de herramientas digitales, además de tener un moderno método de
+                    enseñanza que garantizarán resultados positivos.
+                </p>
+                <div class="acerca-carrusel">
+                    <div id="slider" class="carousel slide" data-ride="carousel">
 
-                    <ol class="carousel-indicators">
-                        <li data-target="#slider" data-slide-to="0" class="active"></li>
-                        <li data-target="#slider" data-slide-to="1"></li>
-                        <li data-target="#slider" data-slide-to="2"></li>
-                        <li data-target="#slider" data-slide-to="3"></li>
-                        <li data-target="#slider" data-slide-to="4"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="Assets/carrusel.png">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider" data-slide-to="1"></li>
+                            <li data-target="#slider" data-slide-to="2"></li>
+                            <li data-target="#slider" data-slide-to="3"></li>
+                            <li data-target="#slider" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="Assets/carrusel.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="Assets/carrusel.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="Assets/carrusel.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="Assets/carrusel.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="Assets/carrusel.png">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="Assets/carrusel.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="Assets/carrusel.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="Assets/carrusel.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="Assets/carrusel.png">
-                        </div>
+                        <!--.carousel-inner-->
+
                     </div>
-                    <!--.carousel-inner-->
-
                 </div>
-            </div>
 
+            </div>
         </div>
+
         <div class="nosotros  full-lg-screen-100" id=nosotros>
             <h2 class="title-h2">¿Por qué nosotros?</h2>
             <article>
@@ -209,17 +216,145 @@
             </div>
 
         </div>
+        <div class="aula full-lg-screen-100" id="aula">
+            <h2 class="title-h2">Explora nuestra
+                aula virtual</h2>
 
+            <div class="aula-cards ">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <a href="https://api.whatsapp.com/send?phone=51956919909&text=Hola%21%20Quisiera%20Contactarte." class="float"
-            target="_blank">
-            <i class="fa fa-whatsapp my-float"></i>
-            ¿En qué podemos ayudarte?
-        </a>
-        <div class="chatear">
-            <img src="Assets/chat.png" alt="">
+                <div class="aula-card " style="width:321px; height: 278px;">
+                    <h5 class="">Clases en vivo/ grabadas</h5>
+                    <p class="">Accede a clases en vivo todos los días; si no puedes conectarte revisa tus
+                        clases grabadas.</p>
+                    <img class="card-img-bottom" style="height:128px ;" src="Assets/Rectangle 25.png"
+                        alt="Card image cap">
+                </div>
+                <div class="aula-card " style="width:321px; height: 278px;">
+                    <h5 class="">Materiales de estudio</h5>
+                    <p class="">Descarga diapositivas, resúmenes, separatas y libros (acorde al prospecto de tu
+                        Escuela) y refuerza lo aprendido en clase.</p>
+                    <img class="card-img-bottom" style="height:128px ;" src="Assets/Rectangle 25.png"
+                        alt="Card image cap">
+                </div>
+                <div class="aula-card " style="width:321px; height: 278px;">
+                    <h5 class="">Simulacros</h5>
+                    <p class="">Practica con evaluaciones semanales y mensuales para una mejor preparación.</p>
+                    <img class="card-img-bottom" style="height:128px ;" src="Assets/Rectangle 25.png"
+                        alt="Card image cap">
+                </div>
+            </div>
         </div>
+
+        <div class="ingresantes full-lg-screen-100" id="ingresantes">
+            <h2 class="title-h2">Conoce a nuestros ingresantes</h2>
+            <div class="contenedor-carousel_1">
+                <div class="carousel_1">
+                    <div class="slider_1">
+                        <section class="card-ingresantes">
+                            <p class="testimonio">Gracias a GUIDE logré mi ingreso.
+                                Lo que más me gustó fueron los profesores y las clases grabadas.</p>
+                            <div class="card-ingresantes-alumno">
+                                <img class="card-img" src="Assets/civil.svg" alt="">
+                                <p>Erick Arancibia
+                                    Ingresante ESOFA</p>
+                            </div>
+                            <div class="estrellas">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                            </div>
+                        </section>
+                        <section class="card-ingresantes">
+                            <p class="testimonio">Gracias a GUIDE logré mi ingreso.
+                                Lo que más me gustó fueron los profesores y las clases grabadas.</p>
+                            <div class="card-ingresantes-alumno">
+                                <img class="card-img" src="Assets/civil.svg" alt="">
+                                <p>Percy Cordova
+                                    Ingresante ESOFA</p>
+                            </div>
+                            <div class="estrellas">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                            </div>
+                        </section>
+                        <section class="card-ingresantes">
+                            <p class="testimonio">Gracias a GUIDE logré mi ingreso.
+                                Lo que más me gustó fueron los profesores y las clases grabadas.</p>
+                            <div class="card-ingresantes-alumno">
+                                <img class="card-img" src="Assets/civil.svg" alt="">
+                                <p>Alejeandro Fernandez
+                                    Ingresante ESOFA</p>
+                            </div>
+                            <div class="estrellas">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                            </div>
+                        </section>
+                        <section class="card-ingresantes">
+                            <p class="testimonio">Gracias a GUIDE logré mi ingreso.
+                                Lo que más me gustó fueron los profesores y las clases grabadas.</p>
+                            <div class="card-ingresantes-alumno">
+                                <img class="card-img" src="Assets/civil.svg" alt="">
+                                <p>Luis Zapata
+                                    Ingresante ESOFA</p>
+                            </div>
+                            <div class="estrellas">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                                <img src="Assets/Star 1.png" alt="">
+                            </div>
+                        </section>
+
+
+                    </div>
+                    <div class="control_1">
+
+                        <ul>
+                            <li class="selected_1"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=51956919909&text=Hola%21%20Quisiera%20Contactarte." class="float"
+        target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        ¿En qué podemos ayudarte?
+    </a>
+    <div class="chatear">
+        <img src="Assets/chat.png" alt="">
+    </div>
     </div>
 
 

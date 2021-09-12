@@ -33,6 +33,9 @@ button:hover {
   min-height: 100vh;
 }
 /**********************clases**************************/
+.contenedor {
+  background-color: #e5e5e5;
+}
 .none {
   display: none;
 }
@@ -135,17 +138,28 @@ button:hover {
 }
 
 .menu-btn {
-  outline: thin solid none;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 6px;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border: 0;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  outline-offset: inherit;
   cursor: pointer;
+  border-bottom: none;
+
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.menu-btn:hover {
+  opacity: 1;
 }
 .menu-btn svg {
   fill: #fff;
 }
+
 /*****************************banner**************************/
 .banner {
   background: #e5e5e5;
@@ -188,9 +202,12 @@ button:hover {
 
 /**********************************************acerca********************************/
 .acerca {
-  width: 80%;
-  margin: auto auto;
+  background-color: #ffffff;
   padding-top: 5rem;
+}
+.contenedor-acerca {
+  width: 80%;
+  margin: 1rem auto;
 }
 .acerca h2 {
   font-family: Poppins;
@@ -260,7 +277,7 @@ button:hover {
 
 .dirigimos {
   padding-top: 5rem;
-  width: 80%;
+  width: 70%;
   margin: 1rem auto;
 }
 .dirigimos-personas article {
@@ -324,15 +341,12 @@ button:hover {
 /****************************servicios*****************/
 
 .servicios {
+  margin: 2rem auto;
   padding-top: 5rem;
   padding-bottom: 3rem;
   background-color: #e5e5e5;
 }
 
-.servicios-contenedor {
-  margin: 2rem auto;
-  width: 80%;
-}
 .servicios-info {
   font-family: Poppins;
   font-style: normal;
@@ -340,6 +354,7 @@ button:hover {
   font-size: 0.9rem;
   line-height: 19px;
   text-align: center;
+  padding: 0 2rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -505,9 +520,191 @@ button:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
-.chatear:hover{
-
+.chatear:hover {
   opacity: 0.75;
+}
+/*********************************aula*********************/
+.aula {
+  width: 90%;
+  padding-top: 5rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.aula-cards {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aula .aula-card {
+  width: 321px !important;
+  height: 278px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.aula-card h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-align: center;
+}
+.aula-card p {
+  color: #000;
+  font-size: 0.9rem;
+  line-height: 21px;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.aula-card img {
+  display: block;
+  height: 128px;
+  margin: 0 auto;
+}
+
+/******************************Ingresantes***************************/
+
+.ingresantes {
+  padding-top: 5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.ingresantes h2{
+  margin-bottom: 2rem;
+}
+
+.contenedor-carousel_1 {
+  margin-top: 5rem;
+  width: 276px;
+  height: 264px !important;
+  margin: 0 auto;
+}
+ 
+.card-ingresantes {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0 1rem;
+}
+
+.card-ingresantes .testimonio {
+ 
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000000;
+  mix-blend-mode: normal;
+  margin-top: -2rem;
+}
+.card-ingresantes-alumno {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center !important;
+
+}
+
+.card-img {
+  display: block;
+  max-width: 68px;
+  max-height: 63px;
+  border-radius: 50% !important;
+  
+  margin-right: 0.5rem;
+}
+.card-ingresantes-alumno p {
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  mix-blend-mode: normal;
+  width: 100px;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+/*******************************testimonios*********************/
+.carousel_1 {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.slider_1 {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+.slider_1 section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+}
+.left_1,
+.right_1 {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 23;
+}
+.arrow_1 i {
+  font-size: 70px;
+  color: #416be4;
+}
+.left_1 {
+  left: 0px;
+  bottom:1rem;
+}
+.right_1 {
+  right: 10px;
+}
+.control_1 ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+.control_1 ul li {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.control_1 ul li.selected_1 {
+  background: transparent;
 }

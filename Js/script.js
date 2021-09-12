@@ -24,8 +24,42 @@
 
 })(document);
 
+/**********************************************carrousel********************************* */
 
+((document)=>{
+    const left = document.querySelector('.left_1');
+const right = document.querySelector('.right_1');
 
+const slider = document.querySelector('.slider_1');
+
+const indicatorParent = document.querySelector('.control_1 ul'); 
+const indicators = document.querySelectorAll('.control_1 li');
+index = 0;
+
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    document.querySelector('.control_1 .selected_1').classList.remove('selected_1');
+    indicator.classList.add('selected_1');
+    slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
+    index = i;
+    
+  });
+});
+
+left.addEventListener('click', function() {
+  index = (index > 0) ? index -1 : 0;
+  document.querySelector('.control_1 .selected_1').classList.remove('selected_1');
+  indicatorParent.children[index].classList.add('selected_1');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+});
+
+right.addEventListener('click', function() {
+  index = (index < 4 - 1) ? index+1 : 3;
+  document.querySelector('.control_1 .selected_1').classList.remove('selected_1');
+  indicatorParent.children[index].classList.add('selected_1');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+});
+})(document);
 
 /***********************************Animaciones**************** */
 ((d) => {
