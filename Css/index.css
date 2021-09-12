@@ -407,6 +407,9 @@ button:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.2rem;
 }
+.tarjeta img {
+  cursor: pointer;
+}
 .tarjeta-grid div {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -532,6 +535,9 @@ button:hover {
   margin: 0 auto;
   padding-bottom: 2rem;
 }
+.aula h2 {
+  margin-bottom: 3.5rem;
+}
 .aula-cards {
   margin: 1rem auto;
   display: flex;
@@ -580,9 +586,10 @@ button:hover {
   padding-top: 5rem;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
-.ingresantes h2{
-  margin-bottom: 2rem;
+.ingresantes h2 {
+  margin-bottom: 3.5rem;
 }
 
 .contenedor-carousel_1 {
@@ -591,12 +598,12 @@ button:hover {
   height: 264px !important;
   margin: 0 auto;
 }
- 
+
 .card-ingresantes {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -606,7 +613,6 @@ button:hover {
 }
 
 .card-ingresantes .testimonio {
- 
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -621,7 +627,6 @@ button:hover {
   display: flex;
   justify-content: start;
   align-items: center !important;
-
 }
 
 .card-img {
@@ -629,11 +634,10 @@ button:hover {
   max-width: 68px;
   max-height: 63px;
   border-radius: 50% !important;
-  
+
   margin-right: 0.5rem;
 }
 .card-ingresantes-alumno p {
-  
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -651,7 +655,7 @@ button:hover {
   height: 100%;
   overflow: hidden;
   position: relative;
-  border-radius: 5px;
+  border-radius: 45px;
   background: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -681,7 +685,7 @@ button:hover {
 }
 .left_1 {
   left: 0px;
-  bottom:1rem;
+  bottom: 1rem;
 }
 .right_1 {
   right: 10px;
@@ -707,4 +711,74 @@ button:hover {
 }
 .control_1 ul li.selected_1 {
   background: transparent;
+}
+
+/***************************footer************/
+
+footer {
+  background-color: #8d8d8d;
+  color: #ffffff;
+  font-family: Poppins;
+  mix-blend-mode: normal;
+  font-style: normal;
+  padding-bottom: 5rem;
+}
+.content-footer {
+  padding: 1rem auto;
+  width: 90%;
+  margin: 0 auto;
+}
+footer .conocenos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+footer .conocenos p {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.1rem;
+}
+footer .conocenos p:nth-child(1) {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+footer .contacto {
+  padding-top: 1rem;
+}
+footer .contacto p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+footer .contacto p span {
+  margin-right: 0.2rem;
+}
+
+footer .contacto p:nth-child(1) {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 0.4rem;
+}
+
+footer .redes {
+  padding-top: 1rem;
+}
+
+.redes p {
+  font-size: 0.8rem;
+  line-height: 18px;
+  font-weight: 600;
+}
+.redes div img{
+  margin-right: .7rem;
 }
