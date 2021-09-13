@@ -789,7 +789,7 @@ footer .redes {
 
 /******************Version Desktop******************/
 
-@media (min-width: 1024px) {
+@media (min-width: 1350px) {
   /******************cabecera*********************/
   .cabecera-claseGratis {
     margin-right: -32rem;
